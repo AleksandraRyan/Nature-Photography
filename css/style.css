@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,500&family=Poppins:wght@500&display=swap');
+
+:root {
+  --main-font: 'Poppins', sans-serif;
+  --secondary-font: 'Lola', serif;
+}
+
+/* Index / Hero */
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a {
+  font-family: 'Lola', serif;
+  font-size: 18px;
+  border: #666 1px solid;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.hero {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  /* background: olive; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+    no-repeat center center/cover;
+  position: relative;
+  color: aliceblue;
+}
+.hero h1 {
+  font-family: 'Lora', serif;
+  font-size: 80px;
+}
+
+.hero p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.hero .btn-branding {
+  background: #3e91e2;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 35px;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  transition: all 500ms ease-in-out;
+}
+
+.hero .btn-branding:hover {
+  background: #1279df;
+  color: #000;
+}
