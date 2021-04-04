@@ -3,18 +3,18 @@
 :root {
   --main-font: 'Poppins', sans-serif;
   --secondary-font: 'Lola', serif;
+  --main-color: aliceblue;
 }
 
 /* Index / Hero */
 
 .navbar-brand {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
 }
 
 .nav-link {
-  font-family: 'Lola', serif;
+  font-family: var(--secondary-font);
   font-size: 18px;
-  /* border: #666 1px solid; */
   border-radius: 20px;
   margin-right: 15px;
 }
@@ -44,15 +44,15 @@
   background: url('https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
     no-repeat center center/cover;
   position: relative;
-  color: aliceblue;
+  color: var(--main-color);
 }
 .hero h1 {
-  font-family: 'Lora', serif;
+  font-family: var(--secondary-font);
   font-size: 80px;
 }
 
 .hero p {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--main-font);
   font-weight: 500;
   font-style: italic;
 }
@@ -65,8 +65,8 @@
   border: 0;
   border-radius: 4px;
   padding: 10px 35px;
-  color: aliceblue;
-  font-family: 'Poppins', sans-serif;
+  color: var(--main-color);
+  font-family: var(--main-font);
   transition: all 500ms ease-in-out;
 }
 
@@ -77,9 +77,10 @@
 
 /* Gallery */
 .gallery-heading h1 {
+  font-size: 50px;
   font-family: var(--main-font);
   margin-bottom: 30px;
-  color: aliceblue;
+  color: var(--main-color);
 }
 
 .gallery-heading a {
@@ -87,11 +88,44 @@
 }
 .gallery-heading h1:hover {
   display: inline-block;
-  border-bottom: 3px solid aliceblue;
+  border-bottom: 3px solid var(--main-color);
+}
+
+hr.line {
+  color: var(--main-color);
+  height: 1px;
+  margin: 20px 0;
 }
 
 @media (max-width: 991px) {
   .nav-link.active {
     border: none;
+  }
+}
+
+@media (max-width: 564px) {
+  .hero {
+    padding: 0;
+  }
+  .hero h1 {
+    font-size: 50px;
+    padding: 0 10px;
+  }
+  .hero p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .gallery-heading h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    border: 1px solid var(--main-color);
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery-heading h1 {
+    font-size: 25px;
   }
 }
