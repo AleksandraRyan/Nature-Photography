@@ -75,6 +75,21 @@
   color: #000;
 }
 
+/* Gallery */
+.gallery-heading h1 {
+  font-family: var(--main-font);
+  margin-bottom: 30px;
+  color: aliceblue;
+}
+
+.gallery-heading a {
+  text-decoration: none;
+}
+.gallery-heading h1:hover {
+  display: inline-block;
+  border-bottom: 3px solid aliceblue;
+}
+
 @media (max-width: 991px) {
   .nav-link.active {
     border: none;
